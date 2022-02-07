@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HEALTH-TRACKER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="‪I:\MINI PROJECT 2020\main files\style.css">
+	<link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+	<link rel="icon" href="I:\MINI PROJECT 2020\main files\thumbnail.png"  type="image/x-icon">
+	<!--Styling part ahead-->
+	<style>
+	*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  display: flex; 
+}
+
+.logo{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 230%
+}
+
+.logo img{
+	width:35%;
+
+}
+.nav-list{
+	width: 70%;
+	/*background-color: black;*/
+	display: flex;
+	align-items: center;
+
+}
+
+.nav-list li{
+	list-style: none;
+	padding: 26px 30px;
+
+}
+
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-list li a:hover{
+	text-decoration: none;
+	color: grey;
+}
+
+.rightnav{
+	/*background-color: blue;*/
+	width: 50%;
+	text-align: right;
+
+}
+
+#search{
+	padding: 5px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+
+.background{
+	background: rgba(0,0,0,0.5) url('https://www.dietdoctor.com/wp-content/uploads/2018/08/GettyImages-876656828.jpg');
+	background-size: cover;
+	background-blend-mode: darken;
+}
+
+.btn-sm{
+	background-color: black;
+  color: white;
+   padding: 4px 14px;
+   border: 2px solid grey;
+   border-radius: 10px;
+   font-size: 20px;
+   cursor: pointer;
+   margin-right: 60px;
+   margin-top: 30px;
+
+}
+
+.btn-sm:hover{
+	opacity: 0.7;
+  color: white;
+}
+
+.btn-sm:active{
+	background-color: red;
+}
+
+.firstsection{
+	/*height: 100vh;*/
+}
+
+.card {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.5);
+  width: 300px;
+  margin: auto;
+  min-height: ;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.btn-big {
+  background-color: black;
+  color: white;
+   padding: 4px 80px;
+   border: 2px solid grey;
+   border-radius: 10px;
+   font-size: 20px;
+   cursor: pointer;
+   margin-right: 0px;
+   margin-top: 30px;
+   margin-right: 0px;
+}
+
+.btn-big:hover{
+	opacity: 0.8;
+  color: white;
+}
+
+/*a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}*/
+
+rec-btn:hover, a:hover {
+  opacity: 0.7;
+}
+
+	</style>
+
+
+<!--Styling part ends-->
+
+</head>
+<body>
+	<section class="background firstsection">
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo"><img src="I:\MINI PROJECT 2020\main files\thumbnail.png" alt="logo"></div>
+			<li><a href="I:\MINI PROJECT 2020\main files\HOME.html">Home</a></li>
+			<li><a href="#About">About</a></li>
+			<li><a href="#">BMI Calculator</a></li>
+			<li><a href="#others">Other Services</a></li>
+		</ul>
+		<div class="rightnav" >
+			<!--input type="text" name="search" id="search"-->
+			<button class="btn btn-sm" onclick="document.location='file:///I:/MINI%20PROJECT%202020/main%20files/contact.html'">Contact</button>
+		</div>
+	</nav>
+	
+	
+		<div class="box-main">
+			<div class="firsthalf">
+				<h1 style="font-family: courier new; text-align:center; font-size: 55px;color: red "><b>Recipe Corner</b></h1>
+	<pre><h2 style="font-family: courier new; text-align:center; font-size: 30px;color: white; ">       -powered by Health Tracker</h2></pre>
+			</div>
+			<div class="secondhalf">
+				<!--img src="https://www.dietdoctor.com/wp-content/uploads/2018/08/GettyImages-876656828.jpg" alt="healthy food" style="background-wersize: cover;"-->
+			</div>
+		</div>
+	</section>
+	<br>
+	<h2 style="font-family: courier new; text-align:center; font-size: 30px;color: blue;">Here are some Healthy Food Recipes you can try out for getting Healthy. You can choose recipe as per your choice like <span style="color:green;">Vegetarian</span> or <span style="color:red">Non-Vegetarian.</span> Also compare Calorie of different food items and choose accordingly.</h2>
+	<br>
+
+	<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\pulao.jpg" alt="pulao" style="width:100%;">
+  <h1 style="font-family: courier;">Pulao</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calorie: 359 per 100gm</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='file:///I:/MINI%20PROJECT%202020/main%20files/Pulao-recipe.html'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\litchi-drink.jpg" alt="Lithchi Ginger Drink" style="width:100%">
+  <h1 style="font-family: courier;font-size: 24px">Lithchi Ginger Cooler</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calories: 181kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='file:///I:/MINI%20PROJECT%202020/main%20files/litchi-ginger-cooler-recipe.html'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\tricolor.jpg" alt="tri-color salad" style="width:100%;">
+  <h1 style="font-family: courier;font-size: 24px">Tricolor Salad</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calories: 340 kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='file:///I:/MINI%20PROJECT%202020/main%20files/Tricolor-salad-recipe.html'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\badam-chikki.jpg" alt="Gulab Badam Chikki" style="width:100%;">
+  <h1 style="font-family: courier;font-size: 24px">Gulab Badam Chikki</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calories: 79 kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\CheckerboardCookies.jpg" alt="checker board cookies" style="width:100%;">
+  <h1 style="font-family: courier;">Checker Board Cookies</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calorie: 165kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\Sabudana-Khichdi.jpg" alt="Sabudana Khichdi" style="width:100%">
+  <h1 style="font-family: courier;font-size: 24px">Sabudana Khichdi</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calories: 655kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\Lauki_ke_Kofte.jpg" alt="lauki-kofta" style="width:100%;">
+  <h1 style="font-family: courier;font-size: 24px">Lauki Kofta</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calories: 110 kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\lentil-soup.jpg" alt="lentil veg soup" style="width:100%;">
+  <h1 style="font-family: courier;font-size: 24px">Lentil Vegetable Soup</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calories: 56kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\healthy-blueberry-muffins-square.jpg" alt="blueberry muffin" style="width:100%;">
+  <h1 style="font-family: courier;">Blue Berry Muffin</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian<br><span style="color:brown;">(May contains egg)</span></p>
+  <br>
+  <p>Calorie: 467kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\matar-paneer.jpg" alt="matar paneer masala" style="width:100%">
+  <h1 style="font-family: courier;font-size: 24px">Matar Paneer Masala</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calories: 450kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\Quinoa-channa-biryani-1.jpg" alt="chicken quinao biryani" style="width:100%;">
+  <h1 style="font-family: courier;font-size: 24px">Chicken Quineo Biryani</h1>
+  <br>
+  <p class="title" style="color: red;">Non-Vegetarian</p>
+  <br>
+  <p>Calories: 240 kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+
+<div class="card" style="display: inline-block; margin-left: 25px;margin-top: 10px;">
+  <img src="I:\MINI PROJECT 2020\main files\navratan-korma.jpg" alt="navratan-korma" style="width:100%;">
+  <h1 style="font-family: courier;font-size: 24px">Navratan Korma</h1>
+  <br>
+  <p class="title" style="color: green;">Vegetarian</p>
+  <br>
+  <p>Calories: 233kCal</p>
+ 
+  <p><button class="btn btn-big" onclick="document.location='#'">Get Recipe</button></p>
+</div>
+</body>
+</html>

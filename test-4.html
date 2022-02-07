@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HEALTH-TRACKER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!--link rel="stylesheet" type="text/css" href="‪I:\MINI PROJECT 2020\main files\style.css"-->
+	<link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+	<link rel="icon" href="I:\MINI PROJECT 2020\main files\thumbnail.png"  type="image/x-icon">
+	<!--Styling part ahead-->
+	<style>
+	*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  display: flex; 
+}
+
+.logo{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 230%
+}
+
+.logo img{
+	width:100%;
+	border-radius: 10px;
+	margin-top: 0px;
+}
+.nav-list{
+	width: 70%;
+	/*background-color: black;*/
+	display: flex;
+	align-items: center;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-family: verdana;
+
+}
+
+.nav-list li{
+	list-style: none;
+	padding: 26px 30px;
+
+}
+
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-list li a:hover{
+	text-decoration: none;
+	color: grey;
+}
+
+.rightnav{
+	/*background-color: blue;*/
+	width: 50%;
+	text-align: right;
+
+}
+
+#search{
+	padding: 5px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+
+.background{
+	background-color: black;
+	background-size: cover;
+	background-blend-mode: darken;
+	height: 100px;
+}
+
+.butn-sm{
+	background-color: black;
+  color: white;
+   padding: 4px 14px;
+   border: 2px solid grey;
+   border-radius: 10px;
+   font-size: 20px;
+   cursor: pointer;
+   margin-right: 50px;
+   
+
+}
+
+.butn-sm:hover{
+	opacity: 0.7;
+  color: white;
+}
+
+.butn-sm:active{
+	background-color: red;
+	opacity: 1;
+}
+
+.firstsection{
+	width: 100%;
+}
+
+.btn {
+  background-color: tomato;
+  color: white;
+  padding: 16px 20px;
+  border: inset;
+  cursor: help;
+  width: 40%;
+  opacity: 1;
+  font-size: 30px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  color: cyan;
+}
+.btn:active {
+  background-color: tomato;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  opacity: 1;
+}
+.top{
+  background-color: black;
+  color: white;
+   padding: 4px 14px;
+   border: 2px solid grey;
+   border-radius: 10px;
+   font-size: 20px;
+   cursor: pointer;
+}
+.top:hover{
+  opacity: 1;
+  color: white;
+
+}
+.top:active{
+background-color: red;  
+}
+ 
+    /* CSS Reset */
+    body{
+      background-image: url('file:///I:/MINI%20PROJECT%202020/main%20files/newBG(3).jpg');
+      background-repeat: no-repeat;
+      background-blend-mode: darken;
+      background-size: cover;
+
+    }
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 50px;
+
+    }
+
+    .left img {
+        width: 136px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 29px auto;
+        font-size: 22px
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+   a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    font-size: 90%
+   }
+
+   .dropbtn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+	</style>
+
+
+<!--Styling part ends-->
+
+</head>
+<body>
+	<section class="background firstsection">
+	<nav class="navbar background">
+		<ul class="nav-list">
+			<div class="logo">
+				<img src="I:\MINI PROJECT 2020\WhatsApp Image 2020-12-05 at 2.20.18 PM.jpeg" alt="logo">
+			</div>
+
+			<li><a href="I:\MINI PROJECT 2020\test-4.html">Home</a></li>
+			<li><a href="#About">About</a></li>
+			<li><a href="#">BMI Calculator</a></li>
+
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Other Services</button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="file:///I:/MINI%20PROJECT%202020/main%20files/Recipe-section.html">Recipe</a>
+						<a href="#dangerous dragon game">Dangerous Dragon Game</a>
+						<a href="#UniversityRollPredictor">University Roll Number Predictor</a>
+					</div>
+			</div>
+		</ul>
+
+		
+		<button class="butn butn-sm">Contact</button>
+		</nav>
+		<hr style="background-color: white; margin-top: 0px;">
+	</section>
+<br><br><br>
+
+<div class="container" style="margin-top:30px">
+ 
+      <h2 style="font-family: courier new; color: white; font-size: 30px"><b><u>ABOUT </u></b></h2>
+      
+      <div class="aboutimg"><img src="I:\MINI PROJECT 2020\main files\about.png" alt="about" style="width:15%"></div>
+      <p style="color: white ;font-size:28px;font-family: Electrolize"> 
+<i>HEALTH is a vital aspect of life. As said "HEALTH IS WEALTH", today's busy schedule has lead to decreased health and moreover due to COVID-19 and nationwide lockdown has lead to lethargic and lazy lifestyle for many. Mental health is also affected along with drop in physical health. HEALTHTRACKER helps you to give a reference line to check your health status.</i></p>
+      
+      <br><br>
+   
+      <h2 style="font-family: courier new; color: white; font-size: 30px"><b><u>HOW IT WORKS</u></b></h2>
+
+      <p style="color:gray;font-size:28px;font-family: Electrolize; color: white;"><i>It will calculate fitness through BMI. HEALTHTRACKER  helps you to check your health & maintain it according to the results. It help in giving a line of reference to check fitness level. It will calculate your BMI and as per the results, it will show you the category you fall in like healthy, overweight, underweight, Obesity type. Based on the result it will recommend you a calorie intake required by your body. You can also check out some helthy food recipes provided in the Recipe section on the webpage by simply clicking on the 'Recipe' link given under the 'Other Services' section below.</i></p>
+      <br>
+      <br>
+      <br>
+      
+      <pre><h2 style="font-family: Almendra SC; color: white; font-size: 50px"><b>
+
+ <span style="color:orange;"> Are</span>
+      You
+           <span style="color: green;">Ready!</span></b></h2></pre>
+      <br><br>
+      <button type="start" class="btn" data-target="BMI CALCULATOR" onclick="document.location='BMI-CALCULATOR.html'">Let's Get Started</button>
+    
+  </div>
+
+<br><br><br><br><br>
+<hr style="height: 3px; background-color: red; width: 220px; margin-left: 560px;">
+
+<div class="others" style="text-align: center;">
+<h3 style="color: white;">Our Other Services...</h3>
+      <p style="color: white;">Click on the link you want to.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">HealthTracker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="I:\MINI PROJECT 2020\main files\Recipe-section.html">Recipe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">University Roll Number Predictor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">More Coming Soon...</a>
+        </li>
+      </div>
+
+</ul>
+<div class="jumbotron text-center" style="margin-bottom:0px;background-color: #524553;">
+  <p style="color: white;"><b><i>Contact:</i></b></p>
+   <a href="https://facebook.com"><i class="fa fa-facebook-official"><img src="I:\MINI PROJECT 2020\main files\fb.png" alt="FaceBook" title="FaceBook" width="27px"></i></a>
+
+  <a href="https://www.twitter.com"><i class="fa fa-twitter"><img src="I:\MINI PROJECT 2020\main files\twitter.jpg" alt="twitter" title="twitter" width="27px"></i></a>
+  <a href="https://www.instagram.com"><i class="fa fa-instagram">
+   <img src="I:\MINI PROJECT 2020\main files\insta.jpg" alt="instagram" title="instagram" width="27px"> 
+  </i></a>
+  <a href="https://www.linkedin.com"><i class="fa fa-linkedin">
+   <img src="I:\MINI PROJECT 2020\main files\linkedin.png" alt="linkedin" title="linkedin" width="29px"> </i></a>
+
+   <p style="color: white;"><br>Or you can mail to <a href="mailto:archit1913091@akgec.ac.in" target="_blank" title="archit1913091@akgec.ac.in"><u>Archit </u></a>& <a href="mailto:ayush1913085@akgec.ac.in" target="_blank" title="ayush1913085@akgec.ac.in"><u>Ayush.</u></a></p>
+  <p style="color: white;">© 2020 HealthTracker &#8211; Checking your Health</p>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+<!--from next line till end of body is the code copy pasted from firebase-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<!--/*line which was commented*/-->
+<!--script src="/__/firebase/8.0.1/firebase-app.js"></script-->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+     <!--/*line which was commented*/-->
+<!--script src="/__/firebase/8.0.1/firebase-analytics.js"></script-->
+
+<!-- Initialize Firebase -->
+
+<!--/*line which was commented*/-->
+<!--script src="/__/firebase/init.js"></script-->
+
+
+</body>
+</html>
